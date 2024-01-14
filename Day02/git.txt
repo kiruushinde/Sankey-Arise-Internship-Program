@@ -1,0 +1,28 @@
+All you need to is just watch code with harry 🔥 playlist for git and gitHub. 
+
+1. git --version
+
+2. git init --> initializes a new empty git repo. 
+
+3. git add . --> add's files to staging area 
+
+4. git commit -m "message"
+
+5. git log 
+
+#️⃣ now I am collaborating with another developer..🤓
+
+--> first you make one repository on your account
+--> now add collaborator 
+--> the collaborator will accept the request..
+
+    on collaborator's side 
+    1. accept the request 
+    2. copy the https link 
+    3. run the git clone command and paste the link 
+        git clone <link>
+    4. now you can do the changes, and then add, commit and push it.
+
+--> now you will notice the new commit and changed code files.
+
+--> 
