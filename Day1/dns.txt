@@ -1,0 +1,479 @@
+
+Windows IP Configuration
+
+    
+    ----------------------------------------
+    Record data for type CNAME could not be displayed.
+
+
+    api.software.com
+    ----------------------------------------
+    Record Name . . . . . : api.software.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 30
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 15.197.130.177
+
+
+    Record Name . . . . . : api.software.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 30
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 3.33.151.55
+
+
+    api.software.com
+    ----------------------------------------
+    Record Name . . . . . : api.software.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 30
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 64:ff9b::fc5:82b1
+
+
+    Record Name . . . . . : api.software.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 30
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 64:ff9b::321:9737
+
+
+    mc.corel.com
+    ----------------------------------------
+    Record Name . . . . . : mc.corel.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    mc.corel.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    www.corelstore.com
+    ----------------------------------------
+    Record Name . . . . . : www.corelstore.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    www.corelstore.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    analyticsdcs.ccs.mcafee.com
+    ----------------------------------------
+    Record Name . . . . . : analyticsdcs.ccs.mcafee.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 18
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : analyticsdcs.awsmcafeeccs.mcafee.com
+
+
+    Record Name . . . . . : analyticsdcs.awsmcafeeccs.mcafee.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 18
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2600:1f14:aae:5602:dc35:7aa7:30c0:63a
+
+
+    Record Name . . . . . : analyticsdcs.awsmcafeeccs.mcafee.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 18
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2600:1f14:aae:5602:7e6e:ddb4:4137:c45b
+
+
+    Record Name . . . . . : analyticsdcs.awsmcafeeccs.mcafee.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 18
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2600:1f14:aae:5603:a8e7:72cc:47f6:34ea
+
+
+    Record Name . . . . . : analyticsdcs.awsmcafeeccs.mcafee.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 18
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2600:1f14:aae:5603:bde2:10ca:ccaa:4cd7
+
+
+    Record Name . . . . . : analyticsdcs.awsmcafeeccs.mcafee.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 18
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2600:1f14:aae:5601:c047:44:50e4:342f
+
+
+    Record Name . . . . . : analyticsdcs.awsmcafeeccs.mcafee.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 18
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 2600:1f14:aae:5601:b4f8:5dcc:8002:a6bd
+
+
+    www.googletagmanager.com
+    ----------------------------------------
+    Record Name . . . . . : www.googletagmanager.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    www.googletagmanager.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    ipm.corel.com
+    ----------------------------------------
+    Record Name . . . . . : ipm.corel.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    ipm.corel.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    liveupdate01s.asus.com
+    ----------------------------------------
+    Record Name . . . . . : liveupdate01s.asus.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 1929
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : fp32c3.wpc.a964c.phicdn.net
+
+
+    Record Name . . . . . : fp32c3.wpc.a964c.phicdn.net
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 1929
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : fp32c3.wpc.phicdn.net
+
+
+    Record Name . . . . . : fp32c3.wpc.phicdn.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 1929
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 152.199.44.234
+
+
+    liveupdate01s.asus.com
+    ----------------------------------------
+    Record Name . . . . . : liveupdate01s.asus.com
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 1929
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : fp32c3.wpc.a964c.phicdn.net
+
+
+    Record Name . . . . . : fp32c3.wpc.a964c.phicdn.net
+    Record Type . . . . . : 5
+    Time To Live  . . . . : 1929
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    CNAME Record  . . . . : fp32c3.wpc.phicdn.net
+
+
+    Record Name . . . . . : fp32c3.wpc.phicdn.net
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 1929
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 64:ff9b::98c7:2cea
+
+
+    kiruu-s-mobile.mshome.net
+    ----------------------------------------
+    Record Name . . . . . : Kiruu-s-Mobile.mshome.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 192.168.137.186
+
+
+    kiruu-s-mobile.mshome.net
+    ----------------------------------------
+    No records of type AAAA
+
+
+    origin-mc.corel.com
+    ----------------------------------------
+    Record Name . . . . . : origin-mc.corel.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    origin-mc.corel.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    sws.corel.com
+    ----------------------------------------
+    Record Name . . . . . : sws.corel.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    sws.corel.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    186.137.168.192.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 186.137.168.192.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : Kiruu-s-Mobile.mshome.net
+
+
+    redirect.corel.com
+    ----------------------------------------
+    Record Name . . . . . : redirect.corel.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    redirect.corel.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    mumbai.insightconnector.com
+    ----------------------------------------
+    Record Name . . . . . : mumbai.insightconnector.com
+    Record Type . . . . . : 28
+    Time To Live  . . . . : 34
+    Data Length . . . . . : 16
+    Section . . . . . . . : Answer
+    AAAA Record . . . . . : 64:ff9b::fcf:ee53
+
+
+    mumbai.insightconnector.com
+    ----------------------------------------
+    Record Name . . . . . : mumbai.insightconnector.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 260
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 15.207.238.83
+
+
+    compute-1.amazonaws.com
+    ----------------------------------------
+    Record Name . . . . . : compute-1.amazonaws.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    compute-1.amazonaws.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    1.137.168.192.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 1.137.168.192.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : LapyTopy-1686Kiruu.mshome.net
+
+
+    1.0.0.127.in-addr.arpa
+    ----------------------------------------
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : apps.corel.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : iws.corel.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : mc.corel.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : origin-mc.corel.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : ipm.corel.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : www.corelstore.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : sws.corel.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : redirect.corel.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : deploy.akamaitechnologies.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : compute-1.amazonaws.com
+
+
+    Record Name . . . . . : 1.0.0.127.in-addr.arpa.
+    Record Type . . . . . : 12
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 8
+    Section . . . . . . . : Answer
+    PTR Record  . . . . . : www.googletagmanager.com
+
+
+    lapytopy-1686kiruu.mshome.net
+    ----------------------------------------
+    Record Name . . . . . : LapyTopy-1686Kiruu.mshome.net
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 192.168.137.1
+
+
+    lapytopy-1686kiruu.mshome.net
+    ----------------------------------------
+    No records of type AAAA
+
+
+    iws.corel.com
+    ----------------------------------------
+    Record Name . . . . . : iws.corel.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    iws.corel.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    apps.corel.com
+    ----------------------------------------
+    Record Name . . . . . : apps.corel.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    apps.corel.com
+    ----------------------------------------
+    No records of type AAAA
+
+
+    deploy.akamaitechnologies.com
+    ----------------------------------------
+    Record Name . . . . . : deploy.akamaitechnologies.com
+    Record Type . . . . . : 1
+    Time To Live  . . . . : 0
+    Data Length . . . . . : 4
+    Section . . . . . . . : Answer
+    A (Host) Record . . . : 127.0.0.1
+
+
+    deploy.akamaitechnologies.com
+    ----------------------------------------
+    No records of type AAAA
+
+

@@ -1,0 +1,52 @@
+1. sublime - text editorn ✅
+2. vs code - ✅
+3. notepad++ - ✅
+4. nano - it is a text editor in linux, where if you want to edit the file then you need to use nano command
+
+    this command is also used to create files.
+
+    ctrl + 0 --> save file
+
+5. VIM 
+    vi filename --> creates new file 
+    hit enter, vi editor will open
+
+    i --> to start writing
+
+    o --> insert on new line
+
+    a --> insert after a space(if you want to write between two words..)
+
+    Esc --> escape out of any mode.
+
+    :wq --> save and exit 
+    
+    :q! --> save without exit 
+
+    cat filename --> read file 
+
+    when you normally select any word or a line --> it is automatically copied, 
+    how to paste ?
+    - either press right click
+    - or shift + insert
+
+    r --> replaces the character
+    d --> deletes the line (press 2 times)
+
+    u --> undo 
+
+    x --> remove one character
+
+
+6. IntelliJ
+    IntelliJ idea --> IDE for java 🔥😎
+
+    --> create new project 
+
+7. Pycharm 
+    IDE for python 
+
+    creating a new project (virtual environment)
+
+    how to run ?
+    python name_of_file

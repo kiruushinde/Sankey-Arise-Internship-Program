@@ -1,0 +1,23 @@
+type cmd and open it.
+
+1. ipconfig 
+    ipconfig /all 
+
+2. ipconfig /all | findstr DNS 
+--> finds all strigns contains DNS 
+
+3. ipconfig /release --> if you want new ip address 
+
+4. ipconfig /renew
+
+5. ipconfig /displaydns --> displays all dns of your websites you are usign 
+
+6. ipconfig /displaydns | clip --> copies the output of that command to your clipboard
+
+7. ipconfig /flushdns --> deleting the temporary entris of dns cache
+
+8. nslookup codewithharry.com --> gives us information about dns 
+
+9. #️⃣ cls --> clear the screen 🙂
+
+10. getmac /v --> gives you all the mac addresses
