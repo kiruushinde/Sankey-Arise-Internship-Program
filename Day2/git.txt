@@ -25,4 +25,101 @@ All you need to is just watch code with harry 🔥 playlist for git and gitHub.
 
 --> now you will notice the new commit and changed code files.
 
---> 
+------------------------------------------------------------------------------------
+
+#️⃣ Branching 
+
+let say, Kiran and Utkuu is working on one project
+
+1. both are on master branch 
+2. Kiran added the navbar 
+3. Utkuu added the hero section 
+
+now, Utkuuu want's to add some more features to the hero section, so, what they decide is let's create a new code which is completelyy seperate from master branch.
+
+so, let say branch --> newFeature
+
+and on this newFeature branch Utkuu will add code and if it is ok then we will merge this code to master branch.
+
+--> how to crate new branch 
+    > git checkout -b newFeature 
+
+    you can do changes here
+    git add .
+    git commit -m "..."
+
+--> if you want to switch to the original branch 
+    > git checkout master 
+
+--> to check the branches 
+    > git branch 
+
+#️⃣ merge branches 
+
+    now, when you want to merge newFeature branch to master then what to do..
+
+    1. first come to master branch 
+
+    2. run the command 
+    > git merge newFeature
+
+    ✨ now after merging there will be some conflicts 
+    so, you need to accept the incoming conflicts.
+
+    3. now there will be unmerged files, so add them to stage area and commit 
+
+    > git add .
+    > git commit -m " "
+
+Yup 😋 
+
+ commit 0   commit 1   commit 2     commit 
+    C0 <----- C1 <------ C2 <-------- C7      --> maser branch 
+                          |
+                          | 
+                          C4 <----- C5 <----- C6    --> issue1 branch 
+                        comit 4     commit5   commit 6
+                    
+    when you try to merge issue1 branch with master then there will be merge conflicts
+
+    commands with merge 
+
+    1. git branch -v
+        shows the branches with last commit 
+    
+    2. git branch --merged --> shows the merged branches 
+        git branch --no-merged 
+    
+    3. 
+
+
+#️⃣ Branching workflows 
+
+1. long running branches 
+
+2. topic branches 
+
+
+#️⃣ pusing branches 
+
+just like you push the code on github 
+
+if you are on master then 
+> git push origin master 
+
+and if you are on newFeature 
+> git checkout newFeature 
+> git push origin newFeature 
+
+if you are deleting a branch, make sure is it merged with master 
+
+> git merge newFeature 
+    (Note: if no conflicts then ok, otherwise merge conflicts )
+
+now delete 
+> git branch -d newFeature 
+
+let say you want to delete file from remote repository then
+
+> git push -d origin newFeature
+
