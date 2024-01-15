@@ -1,1 +1,33 @@
-hwersadflj
+1. Abstraction 
+    hiding the irrelevant information and showing only essential 
+
+2. Polymorphism
+    one name, many forms
+
+3. Inheritance
+    acquiring properties of another class 
+
+4. Encapsulation
+    --> biding all the data under a single uint 
+    --> data hiding 
+    --> fully encapsulated class : all the data members are private 
+
+Access modifiers:
+> private (by default all are private) 
+> protected 
+> public 
+
+
+
+#️⃣ Ambiguity in Inheritance 
+
+    class A                class B 
+      |                       |
+      |                       |
+       --->     class C   <---
+
+       let say I have one function abc() in class A and same function in B. then if you are creating object of class C and calling that function, then it will create ambiguity 
+    
+    so, use scope resoultion operator while calling that function.
+
+    c.A::func();
