@@ -1,0 +1,46 @@
+Introduction to Db concepts:
+#️⃣ Relational Db 
+--> here data is stored in structured format 
+means in the form of tables.
+
+e.g. 
+
+customers 
+--------------
+cus. Id     firstname     lastname   address 
+1              Kiran        shinde    sadale
+2              Utkuu        Ghatage   pargaon  
+3              Meow         Manjar     ""
+
+orders 
+----------
+order_id  item    price     cust_id
+1          oil      230       1
+2          powder   100       2
+.
+.
+
+now in order to know that, which customer have place which order, we will connect customer id and order id.
+
+so, cusotmer id will work as a primary key for customers table, and foreign key for orders table.
+
+✨ why to use relational db's 
+1. consistency
+2. security 
+3. ease of backup 
+
+
+
+
+#️⃣ no-relational db 
+
+-> here the data is stored in the form of 
+    - key-value pairs 
+    - columns
+    - graphs 
+    - documents 
+
+✨ why to use no relational db 
+    1. scaling 
+    2. flexibility
+    3. cost effective
