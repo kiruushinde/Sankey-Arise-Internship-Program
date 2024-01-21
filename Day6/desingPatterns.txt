@@ -1,0 +1,10 @@
+#️⃣ Desing patterns 
+    - Design patterns are typical solutions to commonly occurring problems in software design. They are like pre-made blueprints that you can customize to solve a recurring design problem in your code.
+
+    - Patterns are a toolkit of solutions to common problems in software design. They define a common language that helps your team communicate more efficiently.
+
+    What's it consist of 
+    1. intent --> describes both problem and solution 
+    2. motivation --> 
+    3. structure --> classes and relation between them 
+    4. code example --> in one of the programming language
