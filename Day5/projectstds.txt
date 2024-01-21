@@ -1,0 +1,30 @@
+What project stndards you should maintain while writing the code..
+
+1. Effective - should solve the problem it's supposed to sovle 
+2. efficient - time and space complexity 
+3. simplicity 
+4. formatting and syntax
+    - indentation and spacing 
+    - naming conventions
+    - reusable (make use of functions)
+5. modularization (break down code into modules)
+6. Folder structures
+e.g. 
+
+main app 
+|
+|--> images     
+|    |-> img1.jpg
+|    |-> img2.svg
+|    |-> img3.png 
+|
+|--> cpp file 
+|    |-> feature1.cpp
+|    |-> add.cpp 
+|    |-> multiply.cp
+|
+|--> .c files 
+
+this is how your folder structure should look
+
+7. documentation
