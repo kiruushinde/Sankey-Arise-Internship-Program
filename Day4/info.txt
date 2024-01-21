@@ -1,0 +1,228 @@
+Introduction to Db concepts:
+#️⃣ Relational Db 
+--> here data is stored in structured format 
+means in the form of tables.
+
+e.g. 
+
+customers 
+--------------
+cus. Id     firstname     lastname   address 
+1              Kiran        shinde    sadale
+2              Utkuu        Ghatage   pargaon  
+3              Meow         Manjar     ""
+
+orders 
+----------
+order_id  item    price     cust_id
+1          oil      230       1
+2          powder   100       2
+.
+.
+
+now in order to know that, which customer have place which order, we will connect customer id and order id.
+
+so, cusotmer id will work as a primary key for customers table, and foreign key for orders table.
+
+✨ why to use relational db's 
+1. consistency
+2. security 
+3. ease of backup 
+
+✨ when to use ?
+1. enterprise 
+2. web 
+3. mobile 
+
+✨ popular db's 
+1. mySQL
+2. postgreSQL
+3. microsoft sql server 
+
+#️⃣ no-relational db 
+
+-> here the data is stored in the form of 
+    - key-value pairs 
+    - columns
+    - graphs 
+    - documents 
+
+✨ why to use no relational db 
+    1. scaling 
+    2. flexibility
+    3. cost effective
+
+✨ when to use ?
+1. web 
+2. mobile 
+3. IoT 
+4. social media 
+5. gaming 
+
+✨ popular types 
+1. mongoDB 
+2. dyanamoDB 
+
+
+small project + low scale + unknown access pattern --> SQL 
+
+large project + high scale + relational queries --> SQL 
+
+medium/large prjects + high scale + high performance --> NoSQL 
+
+-------------------------------
+
+Normalization:
+
+1. 1NF 
+--> using row order to convey information is not permitted
+--> mixing data types is not permitted
+--> table without a primary key is not permitted
+--> multivalued attributes is not permitted i.e. in one column there cannot be 2 values 
+
+e.g. 
+
+player_id       item_type       item_quantity
+---------------------------------------------
+jdog21          amulates            2
+jdog21          rings               4
+gila19          coppercons          18
+trev73          shields             3
+trev73          arrows              5
+trev73          coppercons          30
+trev73          rings               7
+
+here player_id + item_type = primary key 
+
+
+---------------------------------------
+
+
+2. 2NF
+
+--> all the non key attributes must be entirely dependent on primary key.
+
+let's add rating column 
+
+player_id       item_type       item_quantity     player_rating
+---------------------------------------------------------------
+jdog21          amulates            2            advanced
+jdog21          rings               4            advanced
+gila19          coppercons          18           begineer
+trev73          shields             3            intermediate
+trev73          arrows              5            intermediate               
+trev73          coppercons          30           intermediate
+trev73          rings               7            intermediate
+
+
+now, here non key attributes are item_quantity and player_rating
+
+item_quantity is based on {player_id + item_type}
+
+but, player_rating is only based on {player_id}
+
+so, what to do, we can create a new table like below
+
+
+table1 : 
+player_id       item_type       item_quantity     
+---------------------------------------------
+jdog21          amulates            2
+jdog21          rings               4
+gila19          coppercons          18
+trev73          shields             3
+trev73          arrows              5            
+trev73          coppercons          30
+trev73          rings               7
+
+in above table, item_quantity is non key attribute which is completely dependent on primary key 
+
+{player_id + item_type} --> item_quantity
+
+
+
+table2:
+
+player_id       player_rating
+-----------------------------
+jdog21          advanced
+gila19          begineer
+trev73          intermediate
+
+
+in above table, non key attribute is player_rating which is completely dependent of player_id
+
+{player_id} --> {player_rating}
+
+----------------------------------------------------------
+
+3. 3NF
+
+there should not be transitive dependency.
+
+let's add player skill level column 
+
+player_id       player_rating   skill_level
+--------------------------------------------
+jdog21          advanced            8
+gila19          begineer            2
+trev73          intermediate        5
+
+the skill levels are in between 1 to 9
+
+ 1 2 3             4 5 6        7 8 9
+begineer        intermediate   advanced
+
+here, non key attribute are player_rating and skill_level
+
+player_id --> {player_rating} // player_rating is dependent on player_id
+
+skill_level --> {player_rating}
+
+i.e. player_id --> player_rating --> skill_level
+
+hence, one nonkey attribute is dependent on another non key attribute.
+
+
+what we can do is ?
+
+player_id       skill_level
+---------------------------
+jdog21            8
+gila19            2
+trev73            5
+
+and another new table is 
+
+skill_level     player_rating
+--------------------------
+1                   begineer
+2                   begineer
+3                   begineer
+4                   intermediate
+5                   intermediate
+6                   intermediate
+7                   advanced
+8                   advanced
+9                   advanced
+
+--------------------------------------------
+
+✨ Cardinality
+ 
+ - one to one 
+ - one to many
+ - many to one 
+ - many to many 
+
+-------------------------------------------
+
+✨ desinging schema 
+
+1. use at least third normal form 
+2. constraints
+3. never store full addresses in a line 
+4. never store firstname and lastname in same field
+5. naming conventions
+
+--------------------------------------------

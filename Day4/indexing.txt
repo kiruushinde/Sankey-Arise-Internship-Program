@@ -1,0 +1,60 @@
+#️⃣ why indexing is used ?
+
+--> let say I have a database of 10,000 records and in that database I want to search the 345th record then how you will do that.
+    - you will search it manually (linear search)
+    - but it is time consuming
+
+so,
+✨ indexing is a data structure which stores search key and a pointer to the data block in disk.
+    - it reduces the access time 
+    - index file is always sorted
+    - so, you can apply binary search on that, and jump to the data block in memory
+
+#️⃣ types 
+1. primary index (clustering index)
+    this index can be applied on a data who is sequentially ordered..
+    e.g. roll numbers of a student, names, etc. 
+
+    two types of indices 
+
+    1. Dense index 
+        it contains every key value for data file on disk. if in a file there are 10,000 records then in dense index we also create 10,000 search keys 
+
+    2. Sparse index 
+        it contains key value for some of the data file.
+        e.g. let say in index file, we create index 1 which refers to block no. 1 to 10, index 2 refers to block no. 11 to 20.
+
+        index       blocks 
+        --------------------
+        1           1 to 10
+        2           11 to 20
+        3           21 to 30
+        4           31 to 40
+        5           41 to 50
+
+        so, if I asked to find record no. 50, then in index file it will at index 5.
+
+    #️⃣ Primary indexing can be based on w.r.t. primary key attribute or non key attribute.
+
+    ❇️ indexing based on key attribute
+        ✨ when you do indexing based on the "primary key attribute", then we can call it as sparse indexing.
+
+    ❇️ indexing based on nonkey attribute
+        (clustering indexing)
+        here we create index for every unique value, there can be some duplicating values in data file, so we create index for only unique value and from that index just by accessign next block's address if the next block is of same value, this is how we access all the information.
+
+    ❇️ multilevel indexing 
+        we create index file in multiple layers
+        e.g. 
+
+        1   ----->   10    -----> 101, 102...etc 
+                    11
+                    12
+        2
+        3
+------------------------------------------------------------------------------
+
+2. Secondary indexing 
+    this is applied on unsorted data.
+
+    this is nothing but you are creating "dense indexing" here.

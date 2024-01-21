@@ -1,0 +1,32 @@
+Two types 
+1. aggregate functions (on many records )
+    - count()
+    - sum()
+    - avg()
+    - min()
+    - max()
+
+    often used with group by clause, ignores null values except count(*) 
+2. scalar functions (works on each record independently)
+    - ucase()
+    - lcase()
+    - mid()
+        syntax: mid(col_name, start, length)
+        mid(name, 2, 3)
+            in column name it will start from 2nd position and will cut the strings upto 3 lengths
+        
+    - length() 
+        returns the length of each value in a column
+
+    - round() --> rounds off the value 
+        e.g. round(col_name, 0) {0 indicates the no. of decimal places }
+        if 200.32 --> 200 
+    
+    - now()
+        return data nd time 
+        select now();
+    
+    - format()
+        format's the current data as 'yyyy-mm-dd'
+
+but, they both returns single value

@@ -1,0 +1,32 @@
+#️⃣ Stored routine
+    it is a sql statement or a set of statements that are stored on database server and called no. of times.
+
+    They are of two types 
+    - Stored Procedure 
+    - user defined function 
+
+----------------------------------------------------
+
+✨ syntax 
+
+// delete if already exists 
+DROP PROCEDURE IF EXITST p_name;
+
+now ususlly we use ; as a delimeter to end the line, but while declaring the procedures we need to change it to "$$";
+
+// chage delimeter
+DELIMETER $$
+
+// now you can define the procedcure as follows 
+CREATE PROCEDURE p_name()
+BEGIN 
+    select * from employees
+    limit 10;
+END$$ 
+
+// again change the delimeter to semicolon
+DELIMETER ;
+
+-----------------------------------------------------------------
+
+what ever you write between the begin and end, is your stored procedure.

@@ -1,0 +1,47 @@
+#️⃣ What are views 
+--> let suppose you only want to see the employee's name then you won't show his salary or other details.
+
+or consider a person who only want to see the loan number but don't want to see the load amount
+
+therefore we can create a virtual relation, where only some portion of a table can be showed to the person, we can store this portion of a table in a virtual relation.
+so, without need of writing sql query, we can access this virtual relation.
+
+This virtual relation is called as "View".
+
+❇️ we can provide a limited access to the database.
+❇️ selective portion of a tables form one or more relations 
+
+- they do not exits physically
+- they do not have their own data.
+- store complex queries
+
+
+#️⃣ if we do any modification in a virtual relation (CURD) then it will affect the actual relation.
+
+#️⃣ views are stored in data dictionary called user_views.
+
+#️⃣ how to create view 
+
+--> create view view_name as <query expression>
+
+    e.g. create view v as 
+            select firstname, lastname from students where [condition]; 
+        
+        (here 2nd line is query expression).
+
+e.g. creat a view (loan-customer) consisting all loan customers, and thier loan numbers.
+
+> creat view loan-customer as 
+    select customer_name, loan_amount from borrower inner join loan.
+
+
+now you can further use this view as 
+
+> select * from loan-cusotmer;
+
+#️⃣ drop view 
+
+view can be deleted by using below command 
+
+drop view view_name;
+
