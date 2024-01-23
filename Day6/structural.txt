@@ -1,0 +1,99 @@
+✨ Structural Desing Patterns
+- they are more concentrated on how the classes and objects are componsed to form larger structure.
+
+- we have class and object Structural patterns.
+
+classes will use inheritance and defines implementation
+and objects are defining the way to cretate or compose them.
+
+- Adaptor will only be the class and others are objects.
+
+ABCDFFP
+Adaptor
+Bridge
+Composite
+Decorator
+Facade
+Flyweight
+Proxy
+
+1. Adaptor Pattern 
+
+- converts the interface of a class into another interface that client wants.
+- it wraps existing class into new interface.
+- when you want to use existing class but the inerface is not matching with the client's expectations, then you will make use of inheritance.
+
+--------------------------------------------------------------
+
+2. Bridge Pattern 
+
+- it seperates the implementation and abstraction so that both can vary independently.
+
+e.g. let say you have two process schedulers and two OS.
+
+2 Process schedulers --> (a, b)
+2 OS --> (x, y)
+
+now you want to os to execute hte process, so what combinations can be made are as follows 
+    - (a, x)
+    - (a, y)
+    - (b, x)
+    - (b, y)
+
+hence, everything is implented independently.
+
+--------------------------------------------------------------------------
+
+3. Composite pattern 
+- compose objects into tree structures 
+
+--------------------------------------------------------------------
+
+4. Decorator Pattern:
+
+Purpose: Attaches additional responsibilities to an object dynamically.
+Use case: When you want to extend the functionality of objects without altering their structure.
+
+- applying inheritance
+
+- participants
+    > component (defines interface)
+    > concrete component (defines object to which you want to add additional responsibilities)
+    > Decorator
+    > concreteDecorator1
+    > concreteDecorator2
+-------------------------------------------------------------------
+
+5. Facade Pattern:
+
+Purpose: Provides a simplified interface to a set of interfaces in a subsystem.
+Use case: When you want to define a higher-level interface that makes the subsystem easier to use.
+
+- no. of dependencies are reduced for recuding complexities
+
+                        Facade
+                      /    |   \
+                    /      |    \
+    Facade is receiving no. of requests, and they are distributed accordingly.
+
+----------------------------------------------------------------
+
+6. Flyweight Pattern:
+
+Purpose: Uses sharing to support large numbers of fine-grained objects efficiently.
+Use case: When you need to support a vast number of similar objects in an efficient manner.
+
+- it reduces the no. of objects.
+- if there are similar kind of objects then it reduces to single one, other wise not.
+
+e.g. in your game there are 10,000 soldiers and all are similiar then you won't create 10,000 objects, but use the same object for all
+
+------------------------------------------------------------------
+
+7. Proxy Pattern:
+
+Proxy means in place of.
+
+Purpose: Provides a surrogate or placeholder for another object to control access to it.
+Use case: When you want to add a level of control over the access to an object.
+------------------------------------------------------------------------

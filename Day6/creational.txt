@@ -1,0 +1,189 @@
+
+✨ Creational Patterns
+    - it deal with the process of object creation. They provide solutions to the problem of how to instantiate objects in a flexible and efficient way, without specifying their exact classes this focuses on 2 thigns.
+
+    - abstraction
+    - hiding 
+
+    there are 5 Categories
+
+    👉 Abstract factory DP
+        - it provides an interface for creating related objects without specifying their concrete class.
+        - multiple look and feel 
+
+------------------------------------------------------------------------
+
+    👉 Builder DP  
+        - Separate the construction of a complex object from its representation, allowing the same construction process to create various representations.
+
+        - builder : defines the interface 
+          concreteBuilder : implements the interface 
+          director : constructs an object by using interface provided by builder 
+          product : reprsents the object under construction
+
+
+        code:
+        class Product 
+        {
+        private:
+            string partA_, partB_, partC_;
+
+        public:
+            // Methods to set different parts of the product
+            // only defining the interface 
+            void setPartA(const string& partA) {
+                partA_ = partA;
+            }
+
+            void setPartB(const string& partB) {
+                partB_ = partB;
+            }
+
+            void setPartC(const std::string& partC) {
+                partC_ = partC;
+            }
+
+            void show() {
+                std::cout << "Part A: " << partA_ << "\n";
+                std::cout << "Part B: " << partB_ << "\n";
+                std::cout << "Part C: " << partC_ << "\n";
+            }
+        };
+
+        class Builder {
+        public:
+            virtual void buildPartA() = 0;
+            virtual void buildPartB() = 0;
+            virtual void buildPartC() = 0;
+            virtual Product* getResult() = 0;
+        };
+
+        class ConcreteBuilder : public Builder {
+        private:
+            Product* product;
+
+        public:
+            // construction of methods
+            ConcreteBuilder() : product(new Product()) {}
+
+            void buildPartA() override {
+                product->setPartA("A");
+            }
+
+            void buildPartB() override {
+                product->setPartB("B");
+            }
+
+            void buildPartC() override {
+                product->setPartC("C");
+            }
+
+            Product* getResult() override {
+                return product;
+            }
+        };
+
+---------------------------------------------------------------------------
+
+    3. Factory DP 
+        - it defines an inerface for creating an object, but the subclasses decides which class to instantiate.
+        - all the implementation details are stored in one class, and whenever a particular class want's to access it, he can use it.
+
+        e.g. creating desktop application where two abstract classes are there
+        > application
+        > documentation
+
+        e.g. creating a drawing application 
+            - drawingApplication
+            - drawingDocumentation
+
+        structure:
+        - again the same participants are there,
+            > product 
+            > concreteProduct()
+        
+        #️⃣ Code
+
+        class Product {
+        public:
+            virtual void create() = 0;
+        };
+
+        class ConcreteProductA : public Product {
+        public:
+            void create() override {
+                // Implementation for creating Product A
+            }
+        };
+
+        class ConcreteProductB : public Product {
+        public:
+            void create() override {
+                // Implementation for creating Product B
+            }
+        };
+--------------------------------------------------------------------------
+
+    4. Prototpye dp 
+        - prototype is a template for any object before the actual object is constructed.
+        - you will clone the interface and then can add the functionalities to it.
+
+        structure:
+        - again there will be participants
+            > client (calls prototype())
+            > prototype (defines the interface )
+            > concretePrototype1 (constructs the product)
+            > concretePrototype2 (constructs the product)
+
+        class Prototype {
+        public:
+            virtual Prototype* clone() = 0;
+            virtual void use() = 0;
+        };
+
+        class ConcretePrototype : public Prototype {
+        public:
+            Prototype* clone() override {
+                return new ConcretePrototype(*this);
+            }
+
+            void use() override {
+                // Implementation for using the cloned object
+            }
+        };
+----------------------------------------------------------------------
+
+    5. Singletone 
+        - it ensures that a class has single instance only and provides a global point of access to it meaning that, can be accessed from outside of the class as well.
+        - sometimes we want only one window manager or just one factory for a product, any other functionalities you don't want 
+        
+        strecture:
+
+        Singletone
+        -----------------
+        static instance()       <---------- return uniqueinstance 
+        SingletoneOperation()
+
+        code:
+
+        class Singleton {
+        private:
+            static Singleton* instance;
+            Singleton() {} // Private constructor to prevent instantiation.
+
+        public:
+            static Singleton* getInstance() {
+                if (!instance) {
+                    instance = new Singleton();
+                }
+                return instance;
+            }
+        };
+
+        // Usage:
+        Singleton* obj = Singleton::getInstance();
+
+
+
+2. Structural Patterns 
+3. Behavioral Patterns

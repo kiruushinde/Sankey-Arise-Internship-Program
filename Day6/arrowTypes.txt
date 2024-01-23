@@ -1,0 +1,36 @@
+1. association --------------- (continuous straight line)
+    using simpel line 
+    it shows that two classes are connected with each other.
+
+2. direct association
+    Directed association shows a strong relationship between classes. The classes must communicate.
+
+    For example, a bowl might contain fruit. The bowl acts as a container class for the fruit class.
+
+    Bows -------> fruit
+
+3. Aggregation
+    We use aggregation arrows when we want to convey that two classes are associated, but not as close as in direct association. The child class can exist independent of the parent element. 
+
+    e.g. a book still exists if somebody checks it out from the library.
+
+    ----------<>
+
+
+4. Composition
+    Composition associations show relationships where the sub-object exists only as long as the container class exists.
+
+    e.g. a pocket on the front of a shirt cannot exist if we destroy the shirt. 
+
+    --------<*>
+
+5. Dependency 
+    Dependency arrows show us where two elements depend on each other.
+
+    e.g. client is dependet of supplier 
+
+    --------------> this is dotted only 
+
+6. Multiplicity 
+
+    1 -----------> * (one to many )
