@@ -1,4 +1,4 @@
-✨ Behavioral Patterns
+#️⃣ Behavioral Patterns
 - they are concerned with assignment of responsibility between objects. 
 - they also descriebes the communication between them.
 

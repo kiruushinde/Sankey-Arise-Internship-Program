@@ -1,109 +1,145 @@
-There are following types 
+Q. Write a report on your understanding of Rendering and Design Patterns. Mention and elaborate where a particular Rendering pattern is applicable and is well suited for which use case.
 
-✨CSR : Client Side Rendering
-✨SSR : Server Side Rendering
-✨SSG : Static Site Generation
-✨ISR : Incremental Static Regeneration
+--> Soution:
 
-#️⃣ Build process 
+1. Rendering Patttern
 
-source code --> build --> server --> client (brower)
+    Following are the types of Rendering pattern
 
-first the source code is passed to build process, that it the code is stored on to the server. and then sent on to the brower.
-e.g. npm run build / dev etc.
+    ✨CSR : Client Side Rendering
+    ✨SSR : Server Side Rendering
+    ✨SSG : Static Site Generation
+    ✨ISR : Incremental Static Regeneration
 
+    What is Build process ?
 
-✨ CSR : client side Rendering
+    source code --> build --> server --> client (brower)
 
-    Build                        server             client 
-
-                    |            🟥🟥🟥      |
-                    |                          |
-html                |                          | 
-🟥🟥🟥             |                          |
-                    |---->        ⬜⬜⬜      | -->  🟥🟥  --> 🟥🟢 --> 🟥⬜🟢
-javascript          |                          | 
-🟢🟢🟢            |                          |
-                    |                          |
-css                 |                          | 
-◻️◻️◻️            |             🟢🟢🟢     |
-                    |                          |
-
-- the build phase is something where you write the code 
-- on the sever all your code is kept seperate and all the html, css and js are kept seperate.
-- and now on client side first we send html, and then javascript is sent and as required the js is sent and css is also added.
-- this is the core react approach, where everthing will happen through javascript and we sent javascript to the client.
-
-- since empty html page is thrown on client side, it is difficult for search engines. There is no content there, but it is actually created when client visites the page.
-
-- here the web page is rendered/created on client side 
+    first the source code is passed to build process, that it the code is stored on to the server. and then sent on to the brower.
+    e.g. npm run build / dev etc.
 
 
---------------------------------------------------------------------------------
+    1) CSR : client side Rendering
 
-✨ Server side Rendering
+        Build                        server             client 
 
+                        |            🟥🟥🟥      |
+                        |                          |
+    html                |                          | 
+    🟥🟥🟥             |                          |
+                        |---->        ⬜⬜⬜      | -->  🟥🟥  --> 🟥🟢 --> 🟥⬜🟢
+    javascript          |                          | 
+    🟢🟢🟢            |                          |
+                        |                          |
+    css                 |                          | 
+    ◻️◻️◻️            |             🟢🟢🟢     |
+                        |                          |
 
-Build                   Server                  Client 
+    - the build phase is something where you write the code 
+    - on the sever all your code is kept seperate and all the html, css and js are kept seperate.
+    - and now on client side first we send html, and then javascript is sent and as required the js is sent and css is also added.
+    - this is the core react approach, where everthing will happen through javascript and we sent javascript to the client.
 
-html              |        🟥🟢           | 
-🟥🟥             |         ◻️             ---->    🟥🟢
-                  |                         <---      ◻️
-JS                |        🟥🟢           |
-🟢🟢             |         ◻️             ---->     🟥🟢
-                  |                        <----       ◻️
-CSS               |                        |
-◻️◻️             |        🟥🟢           |
-                  |                        |
+    - since empty html page is thrown on client side, it is difficult for search engines. There is no content there, but it is actually created when client visites the page.
 
+    - here the web page is rendered/created on client side 
 
-- here all the html, css and js are loaded on server itself.
-- and makes request to the server and on each request new web page is loaded.
-- server has more power than the normal browser cause user uses his mobile phone, or laptop which have very limited ram and processign power.
-- so, sending everying on server is beneficial as it is expandable too.
+    Where it is used ?
 
----------------------------------------------------------------------------------
+    - Single Page Applications (SPAs):
+        SPAs load a single HTML page and dynamically update the content as the user interacts with the application. The rendering is done on the client side using JavaScript frameworks like React, Angular, or Vue.js. This provides a smoother and more interactive user experience.
+    
+    - Offline Capabilities:
+        With client-side rendering, it is possible to cache resources and enable offline access to certain parts of the application. This is beneficial for users in environments with limited or intermittent connectivity.
+    --------------------------------------------------------------------------------
 
-✨ SSG : Static Site Generation
-
-
-Build                        Server                  Client 
-
-                       |        🟥🟢           | 
-🟥🟢                  |         ◻️             ---->    🟥🟢
- ⬜                    |                         <---      ◻️
-                       |        🟥🟢           |
-🟥🟢                  |         ◻️             ---->     🟥🟢
- 🔲                    |                        <----       ◻️
-                       |                        |
-🟥🟢                  |        🟥🟢           |
- ◻️                    |         ⬜            |
+    2) Server side Rendering
 
 
-here, the html css and javascript are combined together at the time of build only.
-hence it takes a lot of time but it is the most efficient way.
-creating web pages at build time.
+    Build                   Server                  Client 
+
+    html              |        🟥🟢           | 
+    🟥🟥             |         ◻️             ---->    🟥🟢
+                    |                         <---      ◻️
+    JS                |        🟥🟢           |
+    🟢🟢             |         ◻️             ---->     🟥🟢
+                    |                        <----       ◻️
+    CSS               |                        |
+    ◻️◻️             |        🟥🟢           |
+                    |                        |
 
 
-------------------------------------------------------------------
+    - here all the html, css and js are loaded on server itself.
+    - and makes request to the server and on each request new web page is loaded.
+    - server has more power than the normal browser cause user uses his mobile phone, or laptop which have very limited ram and processign power.
+    - so, sending everying on server is beneficial as it is expandable too.
 
-✨ ISR : Incremental Static Regeneration
+    Where it is used ?
+
+    - Search Engine Optimization (SEO):
+        SSR is beneficial for SEO because search engine crawlers can easily index the content that is rendered on the server. This is important for websites that rely on search engine visibility, as client-side rendering may face challenges in terms of search engine indexing.
+
+    - Improved Initial Page Load Time:
+        For websites that prioritize fast initial page load times, server-side rendering can provide a better experience. The server sends a fully rendered HTML page to the client, reducing the time it takes for the user to see meaningful content, especially on the first visit.
+    --------------------------------------------------------------------------------
+
+    3) SSG : Static Site Generation
 
 
-               Build                Server                  Client 
-              
-          |                   |        🟥🟢           | 
-          |    🟥🟢          |         ◻️             ---->    🟥🟢
-source--> |     ⬜            |                         <---      ◻️
-code      |                   |        🟥🟢           |
-          |    🟥🟢          |         ◻️             ---->     🟥🟢
-          |     🔲            |                        <----       ◻️
-          |                   |                        |
-          |    🟥🟢          |        🟥🟢           |
-          |     ◻️            |         ⬜            |
+    Build                        Server                  Client 
+
+                        |        🟥🟢           | 
+    🟥🟢                  |         ◻️             ---->    🟥🟢
+    ⬜                    |                         <---      ◻️
+                        |        🟥🟢           |
+    🟥🟢                  |         ◻️             ---->     🟥🟢
+    🔲                    |                        <----       ◻️
+                        |                        |
+    🟥🟢                  |        🟥🟢           |
+    ◻️                    |         ⬜            |
 
 
-- in SSR we were unable to get the updates quickly, whenever the next phase is build then the updates are pushed.
-e.g. let say you want to change some content after every 2 days, and you don't know when the next build phase is, so it is not convinient.
+    here, the html css and javascript are combined together at the time of build only.
+    hence it takes a lot of time but it is the most efficient way.
+    creating web pages at build time.
 
-- but, in ISR after every some time the  build phase will happen, so you can get the updated content in real time.
+    Where it is used ?
+
+    - Content-Based Websites:
+        Static site generation is well-suited for content-based websites, such as blogs, documentation sites, and news portals, where the content doesn't change frequently
+    
+    - more performance and speed 
+        Static sites are fast because they don't require server-side processing for each request.
+    
+    - hosting is also cost effective
+
+    ------------------------------------------------------------------
+
+    4) ISR : Incremental Static Regeneration
+
+
+                Build                Server                  Client 
+                
+            |                   |        🟥🟢           | 
+            |    🟥🟢          |         ◻️             ---->    🟥🟢
+  source--> |     ⬜            |                         <---      ◻️
+  code      |                   |        🟥🟢           |
+            |    🟥🟢          |         ◻️             ---->     🟥🟢
+            |     🔲            |                        <----       ◻️
+            |                   |                        |
+            |    🟥🟢          |        🟥🟢           |
+            |     ◻️            |         ⬜            |
+
+
+    - in SSR we were unable to get the updates quickly, whenever the next phase is build then the updates are pushed.
+    e.g. let say you want to change some content after every 2 days, and you don't know when the next build phase is, so it is not convinient.
+
+    - but, in ISR after every some time the build phase will happen, so you can get the updated content in real time.
+
+    Where it is used ?
+
+    - Large Sites with Frequently Changing Content:
+        For large websites with a considerable amount of content, regenerating the entire site can be time-consuming and resource-intensive. Incremental static site generation allows developers to update only the parts of the site that have changed, reducing build times.
+
+    - Frequent Content Updates:
+        Websites that require frequent content updates, such as news sites, blogs, or e-commerce platforms, can benefit from ISG. Instead of regenerating the entire site for every new piece of content, only the affected pages are regenerated, improving efficiency.

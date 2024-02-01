@@ -1,4 +1,4 @@
-✨ Structural Desing Patterns
+#️⃣ Structural Desing Patterns
 - they are more concentrated on how the classes and objects are componsed to form larger structure.
 
 - we have class and object Structural patterns.
