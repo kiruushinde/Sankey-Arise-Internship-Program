@@ -284,3 +284,12 @@ from departments dpt FULL JOIN employees emp on emp.employee_id = dpt.department
 
 SELECT dpt.department_id, dpt.department_name, emp.first_name, emp.last_name
 from departments dpt cross JOIN employees emp;
+
+-- #️⃣ SubQueries (the output of subqueries is always a single row, and in main query you should use = operator only. otherwise it will throw an error)
+
+SELECT * from student where rollNo = 
+    (select rollNo from studentInfo where name='Kiran' and city='Delhi');
+
+-- and when there are multiple record coming from subquery then you will use in operator
+SELECT * from student where rollNo IN  
+    (select rollNo from studentInfo where name='Kiran' and city='Delhi');
